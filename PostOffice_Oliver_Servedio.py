@@ -2,7 +2,7 @@
 Name: Oliver Servedio
 Description: This code takes in information about mailing a package and returns the price to mail
 Bugs: None
-Features: Removes zero in front of decimal place if there is one and adds zero's to the end of numbers until the hundredths place
+Features: None
 Sources: Mr. Campbell, W3Schools
 Log: 1.0 initial version 
 '''
@@ -117,5 +117,3 @@ def main():
     print(final_cost)
 
 main()
-
-# Test data - should get 5.00: 50, 25, 10, 1, 40000
