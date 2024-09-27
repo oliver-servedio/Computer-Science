@@ -1,0 +1,9 @@
+This piece of code is for a post office to find the cost to mail a certain package. 
+It takes in the lenght, height, and width of the the zipcode were the package is and where it is going.
+It returns the price to mail
+Sample inputs and outputs:
+1. 4, 4, .009, 02893, 08516 = .23
+2. 5, 7, .013, 07245, 45216 = .43
+3. 5, 7, .2, 45216, 07245 = .45
+4. 10, 12, .4, 15623, 89175 = .80
+5. 10, 12, 30, 21505, 72400 =  4.65
