@@ -1,0 +1,6 @@
+Determines the top ten words in terms of appearance from a text and displays them though a pie chart
+
+It takes in two speeches that have already been cleaned: One Trump speech - One Kamala Speech
+  Cleaned means that it does not have words you do not want the code to read and there is no puncuation or special charecters
+
+The code returns two diffent pie charts one from each speech
