@@ -87,6 +87,7 @@ def main():
     print_board()
     turn = order - 1                                               # It's used to find if there has been more than 9 moves and decide who's turn it is
     available_moves = [1,2,3,4,5,6,7,8,9]
+    stop = 0
     
     
     while turn < 9:
