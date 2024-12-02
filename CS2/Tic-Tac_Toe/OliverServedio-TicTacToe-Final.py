@@ -75,7 +75,7 @@ def main():
     while True:
         try:
             BoH = str.lower(input('Do you want to play against a bot or human answer with B or H '))
-            if BoH == 'h' or 'b': break
+            if BoH == 'h' or BoH == 'b': break
         except: print('That was not a valid input try again')
     while BoH == 'b':
         try:
