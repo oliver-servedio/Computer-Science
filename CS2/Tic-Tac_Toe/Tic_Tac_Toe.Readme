@@ -1,0 +1,12 @@
+Chose if you want to play against another player or against a bot
+  - Players must be on the same computer to play against each other
+
+if you chose human
+  - Go back and forth chosing moves that are available 
+    - answer with an int on the board
+
+if you chose bot
+  - deside if you go first or second
+  - Make your moves alternating with bot
+
+Code will tell when there is a win or draw
