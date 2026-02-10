@@ -1,0 +1,3 @@
+# Ignored to allow a demo filed to be used in the testing of this repo
+/__pycache__
+demo.py
