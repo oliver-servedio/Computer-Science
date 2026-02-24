@@ -45,7 +45,7 @@ def animate(placeholder):
     Y.append(earth.y)
 
     # the interval of time the values of the planet will increase by
-    time += 1
+    time += 10
 
     # if trail is true draw the previous trail values
     if trail:
@@ -68,7 +68,7 @@ fig, ax = plt.subplots()
 # sets up the animation object
 # animate is the function that updates the data and graph
 # interval is the time in milliseconds between frames
-ani = FuncAnimation(fig, animate, interval= 5)
+ani = FuncAnimation(fig, animate, interval= .5)
 
 # shows the graph
 plt.show()
