@@ -3,8 +3,8 @@ Author: Oliver Servedio
 Date: 12/1
 Description: A rock paper scissors program where you can choose to play against a highly skilled AI or against a friend of choice.
 bugs: None that I found
-Challegens: Scoreboard - Options to play a computer or another player - Rigged odds for the computer - while True loop - str.lower - error message built in
-How to play = First, you are prompted answer the queston 'Do you want to play against the computer, best 2 out of 3?' if you choose yes, you
+Challenges: Scoreboard - Options to play a computer or another player - Rigged odds for the computer - while True loop - str.lower - error message built in
+How to play = First, you are prompted answer the question 'Do you want to play against the computer, best 2 out of 3?' if you choose yes, you
 play against the computer. If you put no, you have the option to play against another player. You can play normally, and when you want to stop, you can write
 stop as player1. If you want to check the score, just input 'score' as each player, and it will respond with the score.
 Sources: W3Schools - Shep O'Keeffe

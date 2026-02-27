@@ -1,5 +1,6 @@
 '''
 Name: Oliver Servedio
+Date: 10/31/24
 Description: Determines the top ten words in terms of appearance from a text 
 Bugs: None
 Features: Uses matplotlib
@@ -94,4 +95,3 @@ amount = np.array(K_values)                                                     
 plt.title("Kamala Speech")                                                                                  # Give the pie chart a title
 plt.pie(amount, labels = K_words, autopct= lambda x: '{:.0f}'.format(x*amount.sum()/100), startangle=90 )   # Makes the pie chart so that it has the amounts based on values, give the pie chart labels based on the words and gives the pie chart the number values as well
 plt.show()                                                                                                  # Shows the pie chart
- # stack overflow

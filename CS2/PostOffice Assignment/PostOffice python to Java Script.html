@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Dimensions</title>
+</head>
+<body>
+    <form id="boxForm">
+        <label for="height">Height:</label>
+        <input type="number" id="height" name="height" step="0.01"><br><br>
+        
+        <label for="length">Length:</label>
+        <input type="number" id="length" name="length" step="0.01"><br><br>
+        
+        <label for="thickness">Thickness:</label>
+        <input type="number" id="thickness" name="thickness" step="0.01"><br><br>
+        
+        <label for="zipFrom">Zip From:</label>
+        <input type="number" id="zipFrom" name="zipFrom" step="1"><br><br>
+        
+        <label for="zipTo">Zip To:</label>
+        <input type="number" id="zipTo" name="zipTo" step="1"><br><br>
+        
+        <button type="button" onclick="main()">Submit</button>
+    </form>
+
+    <script>
+        /**
+         * Main function to read in the data from the form
+         */
+        function main() {
+            // Read in the data from the form
+            const height = parseFloat(document.getElementById('height').value);
+            const length = parseFloat(document.getElementById('length').value);
+            const thickness = parseFloat(document.getElementById('thickness').value);
+            const zipFrom = parseInt(document.getElementById('zipFrom').value);
+            const zipTo = parseInt(document.getElementById('zipTo').value);
+
+            // Call the other functions (currently not implemented)            
+            
+            var packageCosts = getDimensions(length, height, thickness);
+            var distance = Math.abs(getZip(zipTo)) - getZip(zipFrom)
+
+            var finalCost = (Math.round(100*(packageCosts[0] + (packageCosts[1])*(distance))))/100
+            
+            alert(finalCost);
+            
+        }
+
+        /**
+         * Function to get zip information
+         * @param {number} zip - The zip code
+         */
+        function getZip(zip) {
+            // Implementation goes here
+            if (zip >= 1 && zip <= 6999) {
+                return 1;
+            }
+            else if (zip >= 7000 && zip <= 19999) {
+                return 2;
+            }
+            else if (zip >= 20000 && zip <= 35999) {
+                return 3;
+            }
+            else if (zip >= 36000 && zip <= 62999) {
+                return 4;
+            }
+            else if (zip >= 63000 && zip <= 84999) {
+                return 5;
+            }
+            else if (zip >= 85000 && zip <= 99999) {
+                return 6;
+            }
+            else{
+                alert('Zone does not exist');
+            }
+        }
+
+        /**
+         * Function to calculate distance based on dimensions
+         * @param {number} length - The length of the box
+         * @param {number} height - The height of the box
+         * @param {number} thickness - The thickness of the box
+         */
+        function getDimensions(length, height, thickness) {
+            // Implementation goes here
+            // Post Card
+            if (length >= 3.5 && length <= 4.5 && height >= 3.5 && height <= 6.0 && thickness >= .007 && thickness <= .016) {
+                return [.20, .03];
+            // Large Post Card    
+            } else if (length >= 4.25 && length <= 6 && height >= 6 && height <= 11.5 && thickness >= .007 && thickness <= .015) {
+                return [.37, .03];
+            // Envelope
+            }  else if (length >= 3.5 && length <= 6.125 && length >= 5 && height <= 11.5 && thickness >= .016 && thickness <= .25) {
+                return [.37, .04];
+            // Large Envelope
+            } else if (length >= 6.125 && length <= 25.0 && height >= 11 && height <= 18 && thickness >= .25 && thickness <= .5) {
+                return [.6, .05];
+            // Package 
+            } else if ((length + (2*height) + (2*thickness)) >= 36.0 && (length + (2*height) + (2*thickness)) <= 84.0) {
+                return [2.95, .25];      
+            // Large Package
+            } else if ((length + (2*height) + (2*thickness)) > 84.0 && (length + (2*height) + (2*thickness)) <= 130.0) {
+                return [3.95, .35];
+            } else {
+                alert('Unmailable');
+            }    
+        }
+    </script>
+</body>
+</html>

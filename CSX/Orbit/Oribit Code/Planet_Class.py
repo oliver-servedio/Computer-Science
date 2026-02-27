@@ -1,6 +1,4 @@
-# Make a class with properties of Planets
-# Mass, Radius, Initial Velo X and Y,Placement X and Y 
-
+# A class to store the properties of the planet such as mass, radius, velocity, position, and acceleration
 class planet:
 
     def __init__(self, mass, radius, vx, vy, x, y):

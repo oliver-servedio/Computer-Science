@@ -11,7 +11,7 @@ Note: I had trouble getting the exit function to work how I wanted because it wa
 
 import random
 import sys
-
+    
 board = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 def print_board():
     '''
@@ -66,7 +66,7 @@ def check_win(player):
             print_board()
             print(player + "'s Win")
             return 1
-        
+
 
 def main():
     # Determines if the user is playing against a bot or a human, if they are going first or second, and the move that need to be made
@@ -75,8 +75,10 @@ def main():
     while True:
         try:
             BoH = str.lower(input('Do you want to play against a bot or human answer with B or H '))
-            if BoH == 'h' or BoH == 'b': break
-        except: print('That was not a valid input try again')
+            if BoH == 'h' or BoH == 'b': 
+                break
+        except: 
+            print('That was not a valid input try again')
     while BoH == 'b':
         try:
             order = int(input('Do you want to go first or second? Answer with 1 or 2 '))

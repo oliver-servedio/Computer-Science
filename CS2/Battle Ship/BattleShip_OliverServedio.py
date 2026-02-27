@@ -1,3 +1,14 @@
+'''
+Name: Oliver Servedio
+Date: 5/1/2025
+Description: A two player battle ship game that allows for the players to place their ships and guess the other players ships
+Bugs: If you place ships at the end of the board and try to go off the board it will not raise an error and will still try and place them
+Features: Full ten by ten board, multi length ships, easy placement method, 
+Testers: Jack Randall
+Log: 1.0 initial version 
+'''
+
+
 import time
 import os
 

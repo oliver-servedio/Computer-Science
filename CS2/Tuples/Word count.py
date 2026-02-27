@@ -1,4 +1,5 @@
 import string
+
 fhand = open(r"C:\Users\oservedio27\Desktop\Comp Sci\CS2\Tuples\Tuples.txt", 'r')
 counts = dict()
 for line in fhand:
@@ -16,10 +17,13 @@ for line in fhand:
 
 # Sort the dictionary by value
 lst = list()
+# Makes the dict a list
+for key, val in list(counts.items()):
+    lst.append((val, key))
 
 lst.sort(reverse=True)
 
-for key, val in lst[:10]:
+for key, val in lst[:27]:
     print(key, val)
 
 # Code: https://www.py4e.com/code3/count3.py

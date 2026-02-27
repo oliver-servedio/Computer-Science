@@ -17,6 +17,7 @@ for line in fhand:
                 counts[word] += 1
 
 lst = list()
+# Makes the dict a list
 for key, val in list(counts.items()):
     lst.append((val, key))
 
