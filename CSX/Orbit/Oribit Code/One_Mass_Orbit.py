@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 '''
 Author: Oliver Servedio, Nick Triplett
 Description: This program simulates the orbit of the earth around the sun and the suns movement using Newton's law of gravitation.
@@ -83,7 +82,6 @@ fig, ax = plt.subplots()
 ani = FuncAnimation(fig, animate, interval= 10)
 
 # shows the graph
-=======
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 from Planet_Class import planet
@@ -159,5 +157,4 @@ fig, ax = plt.subplots()
 ani = FuncAnimation(fig, animate, interval= 10)
 
 # shows the graph
->>>>>>> e5adc1c03cd546ca78cd55332836cc4dda7fbd5b
 plt.show()

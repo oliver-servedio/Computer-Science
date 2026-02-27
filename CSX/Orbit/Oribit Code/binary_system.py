@@ -32,8 +32,6 @@ star2 = planet(M2, 7e8, 0, -v, distance/2, 0)
 X1, Y1 = [star1.x], [star1.y]
 X2, Y2 = [star2.x], [star2.y]
 
-# Test orgin
-
 dt = 50000  # fixed timestep
 
 time = 0
